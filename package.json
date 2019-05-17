@@ -1,0 +1,9 @@
+{
+  "name": "json-map",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node test.js && node tests/empty.js && node tests/cli.js"
+  },
+  "description": "Flatten nested JSON objects into dotted key paths"
+}
