@@ -2,6 +2,7 @@
 'use strict';
 var fs=require('fs'), analyze=require('./lib').analyze;
 var args=process.argv.slice(2), file=args[0];
+if(file==='--version'){console.log('0.2.0');process.exit(0);}
 if(!file){console.error('Usage: node cli.js FILE');process.exit(2);}
 var outputPath=null,outputAt=args.indexOf('--output');
 if(outputAt!==-1){outputPath=args[outputAt+1];if(!outputPath){console.error('--output requires a path');process.exit(2);}}
